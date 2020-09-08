@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Антон Кружевицкий](https://up.htmlacademy.ru/htmlcss/29/user/870075).
-* Наставник: `Неизвестно`.
+* Наставник: [Artem Ryzhov](https://htmlacademy.ru/profile/id1387905).
 
 ---
 
