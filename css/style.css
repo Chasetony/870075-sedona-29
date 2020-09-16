@@ -1,0 +1,311 @@
+/* Шрифты */
+
+@font-face {
+    font-family: 'PT sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ptsans'), local('PT Sans'),
+    url('../fonts/ptsans.woff2') format('woff2'),
+    url('../fonts/ptsans.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PT sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Ptsans bold'), local('PT Sans bold'),
+    url('../fonts/ptsansbold.woff2') format('woff2'),
+    url('../fonts/ptsansbold.woff') format('woff');
+    font-display: swap;
+}
+/* Кастомные свойства */
+:root {
+    /* Тексты */
+    --basic-black: #000000;
+    --text-description: #333333;
+    --basic-white: #FFFFFF;
+
+    /* Фоны */
+    --blue: #81B3D2;
+    --blue-hover: #669EC0;
+    --blue-active: #5496BD;
+
+    --brown: #766357;
+    --brown-hover: #604E43;
+    --brown-active: #503E33;
+
+    --backgound-gray: #EEEEEE;
+
+    /* Инпуты */
+    --input-gray: #F2F2F2;
+    --input-gray-hover: #EBEBEB;
+}
+
+/* Базовые стили */
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background: #F2F2F2;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+/* Меню */
+.main-banner {
+    background-color: var(--blue);
+}
+
+/* Меню */
+.nav-menu li{
+    list-style: none;
+}
+.nav-link {
+    color: var(--basic-black);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--blue);
+}
+.nav-link:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+.nav-link:visited {
+    color: var(--brown);
+}
+
+/* Блок с главным баннером */
+
+/*  */
+.index-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    color: inherit;
+}
+.index-description {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-description);
+}
+
+/* Преимущества */
+.blue-fone {
+    background-color: var(--blue);
+}
+
+.advantages-title {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--basic-white);
+}
+.advantages-description {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--basic-white);
+}
+
+/* Блок с иконками */
+.advertising {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.advent-icon {
+    display: block;
+    margin: 0 auto;
+}
+.advent-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+}
+.advent-description {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-description);
+}
+/*  */
+.advantages-gray-fone {
+    background-color: var(--backgound-gray);
+}
+.advantages-gray {
+    display: flex;
+}
+.advantages-gray li {
+    list-style: none;
+}
+.advantages-gray-title {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--basic-black);
+}
+.advantages-gray-description {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-description);   
+}
+/* блок с выбором формы */
+
+.forms-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--basic-black);
+}
+.forms-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text-description); 
+}
+.forms-button {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white); 
+    border: none;
+    background-color: var(--brown);
+    cursor: pointer;
+    width: 568px;
+    height: 86px;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.forms-button:hover {
+    background-color: var(--brown-hover);
+}
+.forms-button:active {
+    background-color: var(--brown-active);
+}
+
+/* форма */
+.modal-hotel {
+    width: 568px;
+    height: 395px;
+    background: var(--basic-white);
+    /* background-color: red; */
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    margin: 0 auto;
+}
+.form-hotel {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+}
+.form-hotel label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+}
+.form-hotel input {
+    background-color: var(--input-gray);
+    height: 38px;
+    border: none;
+    color: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 6px;
+}
+.form-hotel input:hover {
+    background-color: var(--input-gray-hover);
+}
+.form-hotel input:focus {
+    background: var(--input-gray);
+    border: 2px solid #E5E5E5;
+    box-sizing: border-box;
+}
+.form-hotel button {
+    width: 458px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+}
+.form-hotel button:hover {
+    background-color: var(--blue-hover);
+}
+.form-hotel button {
+    background-color: var(--blue-active);
+}
+
+/* Футер */
+.main-footer {
+    background: rgba(255, 255, 255, 0.9);
+}
+.footer-left-side p {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--basic-black);
+}
+.footer-left-side a {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+.footer-social-icon li{
+    list-style: none;
+}
+.footer-social-icon a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.copyright-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--basic-black);
+}

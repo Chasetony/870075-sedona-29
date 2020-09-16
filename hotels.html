@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-          </ul>
-        </nav>
-        <a href="index.html">
-          <img src="https://via.placeholder.com/138x70" alt="Логотип Sedona">
-        </a>
-        <nav>
-          <ul>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
-        </nav>
-    </header>
+<body class="container">
+  <header>
+    <nav class="nav-menu">
+      <ul>
+        <li><a class="nav-link" href="#">Информация</a></li>
+        <li><a class="nav-link" href="#">Фото и видео</a></li>
+      </ul>
+    </nav>
+    <a>
+      <img src="https://via.placeholder.com/138x70" alt="Логотип Sedona">
+    </a>
+    <nav class="nav-menu">
+      <ul>
+        <li><a class="nav-link" href="#">Карта штата</a></li>
+        <li><a class="nav-link" href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main>
         <section>
@@ -94,28 +96,27 @@
 
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
-        <section>
-          <p>#visitSEDONA</p>
-          <p>Тел:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
-        </section>
-  
-        <section>
-          <ul>
-            <li><a href="#"><img src="" alt="Твиттер"></a></li>
-            <li><a href="#"><img src="" alt="Фейсбук"></a></li>
-            <li><a href="#"><img src="" alt="Ютуб"></a></li>
-          </ul>
-        </section>
-        
-        <section>
-          <p>Website by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="https://via.placeholder.com/115x41" alt="Логотип html академии">
-          </a>
-        </section>
+      <section class="footer-left-side">
+        <p>#visitSEDONA</p>
+        <p>Тел:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+      </section>
 
+      <section class="footer-social-icon">
+        <ul>
+          <li><a href="#"><img src="" alt="Твиттер"></a></li>
+          <li><a href="#"><img src="" alt="Фейсбук"></a></li>
+          <li><a href="#"><img src="" alt="Ютуб"></a></li>
+        </ul>
+      </section>
+      
+      <section class="copyright">
+        <p class="copyright-text">Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="https://via.placeholder.com/115x41" alt="Логотип html академии">
+        </a>
+      </section>
     </footer>
 </body>
 </html>
