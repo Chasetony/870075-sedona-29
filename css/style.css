@@ -39,6 +39,9 @@
     /* Инпуты */
     --input-gray: #F2F2F2;
     --input-gray-hover: #EBEBEB;
+
+    /* Рейтинг */
+    --rate: #666666;
 }
 
 /* Базовые стили */
@@ -88,9 +91,9 @@ img {
     color: var(--basic-black);
     opacity: 0.3;
 }
-.nav-link:visited {
+/* .nav-link:visited {
     color: var(--brown);
-}
+} */
 
 /* Блок с главным баннером */
 
@@ -224,14 +227,12 @@ img {
     width: 568px;
     height: 395px;
     background: var(--basic-white);
-    /* background-color: red; */
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     margin: 0 auto;
 }
 .form-hotel {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 30px;
 }
@@ -309,3 +310,197 @@ img {
     text-align: center;
     color: var(--basic-black);
 }
+
+
+/* Страница каталога */
+
+
+.filter_block {
+    background-color: var(--blue);
+}
+.filter_hotels {
+    display: flex;
+
+}
+.filter_items {
+    display: flex;
+    border: none;
+}
+.filter_items legend{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+.filter_label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+}
+
+.custom_checkbox {
+    /* position: absolute; */
+    z-index: -1;
+    opacity: 0;
+}
+.custom_checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+.custom_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--basic-white);
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+}
+.custom_checkbox:checked+label::before {
+    background-image: url('https://via.placeholder.com/11x10');
+}
+.btn_show {
+    width: 137px;
+    height: 36px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color:  var(--basic-white);
+    border: 2px solid var(--basic-white);
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+}
+.btn_show:hover {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color:  var(--basic-black);
+    border: 2px solid var(--basic-white);
+    background-color: var(--basic-white);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+
+/* Сортировка */
+
+.sorting {
+    display: flex;
+}
+.sort_title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+  }
+.sort_index_items {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--basic-black);
+  }
+.sort_items {
+    display: flex;
+}
+.sort_items a {
+    text-decoration: none;
+    border-bottom: 1px dotted var(--blue);
+    color: rgba(0, 0, 0, 0.3);
+
+}
+.sort_items a:hover {
+    color: var(--blue);
+
+}
+.sort_items a:active {
+    color: var(--basic-black);
+    border-bottom: none;
+
+}
+.sort_item {
+    list-style: none;
+}
+.sort_icons {
+    display: flex;
+}
+
+/* Каталог */
+
+.catalog_title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+    cursor: pointer;
+}
+.catalog_title:hover {
+    color: var(--blue);
+}
+.catalog_title:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+.catalog_cost {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-description);
+}
+.catalog_hotel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-description);    
+}
+
+.btn {
+    border: none;
+    height: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn_more {
+    width: 110px;
+    background-color: var(--blue);
+}
+.btn_more:hover {
+    background-color: var(--blue-hover);
+}
+.btn_more:active{
+    background-color: var(--blue-active);
+    color: rgba(255, 255, 255, 0.3);
+}
+.btn_reserv {
+    width: 142px;
+    background-color: var(--brown);
+}
+.btn_reserv:hover {
+    background-color: var(--brown-hover);
+}
+.btn_reserv:active {
+    background-color: var(--brown-active);
+    color: rgba(255, 255, 255, 0.3);
+}
+.catalog_rating {
+    display: flex;
+    list-style: none;
+}
+.catalog_rating_number {
+    background-color: var(--input-gray);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--rate);
+    padding: 3px 12px 3px 15px;
+}
+
