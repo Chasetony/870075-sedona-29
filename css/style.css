@@ -69,43 +69,43 @@ img {
 }
 
 /* Меню */
-.main-banner {
+.main_banner {
     background-color: var(--blue);
 }
 
 /* Меню */
-.nav-menu li{
+.nav_menu li{
     list-style: none;
 }
-.nav-link {
+.nav_link {
     color: var(--basic-black);
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     text-decoration: none;
 }
-.nav-link:hover {
+.nav_link:hover {
     color: var(--blue);
 }
-.nav-link:active {
+.nav_link:active {
     color: var(--basic-black);
     opacity: 0.3;
 }
-/* .nav-link:visited {
+/* .nav_link:visited {
     color: var(--brown);
 } */
 
 /* Блок с главным баннером */
 
 /*  */
-.index-title {
+.index_title {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     text-align: center;
     color: inherit;
 }
-.index-description {
+.index_description {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -114,18 +114,18 @@ img {
 }
 
 /* Преимущества */
-.blue-fone {
+.blue_fone {
     background-color: var(--blue);
 }
 
-.advantages-title {
+.advantages_title {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     text-align: center;
     color: var(--basic-white);
 }
-.advantages-description {
+.advantages_description {
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -140,18 +140,18 @@ img {
     justify-content: space-around;
 
 }
-.advent-icon {
+.advent_icon {
     display: block;
     margin: 0 auto;
 }
-.advent-title {
+.advent_title {
     text-align: center;
     font-weight: 700;
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
 }
-.advent-description {
+.advent_description {
     text-align: center;
     font-weight: 400;
     font-size: 14px;
@@ -159,23 +159,23 @@ img {
     color: var(--text-description);
 }
 /*  */
-.advantages-gray-fone {
+.advantages_gray_fone {
     background-color: var(--backgound-gray);
 }
-.advantages-gray {
+.advantages_gray {
     display: flex;
 }
-.advantages-gray li {
+.advantages_gray li {
     list-style: none;
 }
-.advantages-gray-title {
+.advantages_gray_title {
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
     text-align: center;
     color: var(--basic-black);
 }
-.advantages-gray-description {
+.advantages_gray_description {
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
@@ -184,21 +184,21 @@ img {
 }
 /* блок с выбором формы */
 
-.forms-title {
+.forms_title {
     font-weight: 700;
     font-size: 30px;
     line-height: 24px;
     text-align: center;
     color: var(--basic-black);
 }
-.forms-description {
+.forms_description {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
     color: var(--text-description); 
 }
-.forms-button {
+.forms_button {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
@@ -215,34 +215,34 @@ img {
 
 
 }
-.forms-button:hover {
+.forms_button:hover {
     background-color: var(--brown-hover);
 }
-.forms-button:active {
+.forms_button:active {
     background-color: var(--brown-active);
 }
 
 /* форма */
-.modal-hotel {
+.modal_hotel {
     width: 568px;
     height: 395px;
     background: var(--basic-white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     margin: 0 auto;
 }
-.form-hotel {
+.form_hotel {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
-.form-hotel label {
+.form_hotel label {
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
     color: var(--basic-black);
 }
-.form-hotel input {
+.form_hotel input {
     background-color: var(--input-gray);
     height: 38px;
     border: none;
@@ -252,15 +252,15 @@ img {
     line-height: 26px;
     padding-left: 6px;
 }
-.form-hotel input:hover {
+.form_hotel input:hover {
     background-color: var(--input-gray-hover);
 }
-.form-hotel input:focus {
+.form_hotel input:focus {
     background: var(--input-gray);
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
 }
-.form-hotel button {
+.form_hotel button {
     width: 458px;
     height: 58px;
     font-weight: 700;
@@ -273,42 +273,60 @@ img {
     border: none;
     cursor: pointer;
 }
-.form-hotel button:hover {
+.form_hotel button:hover {
     background-color: var(--blue-hover);
 }
-.form-hotel button {
+.form_hotel button {
     background-color: var(--blue-active);
 }
 
 /* Футер */
-.main-footer {
+.main_footer {
     background: rgba(255, 255, 255, 0.9);
 }
-.footer-left-side p {
+.footer_left_side p {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
     color: var(--basic-black);
 }
-.footer-left-side a {
+.footer_left_side a {
     color: var(--basic-black);
     text-decoration: none;
 }
-.footer-social-icon li{
+.footer_social_icons li{
     list-style: none;
+    width: 46px;
+    height: 48px;
+    background-color: var(--blue);
 }
-.footer-social-icon a{
+.footer_social_icon:hover{
+    background-color: var(--blue-hover);
+}
+.footer_social_icon:active{
+    background-color: var(--blue-active);
+}
+.footer_social_icon a{
     text-decoration: none;
     color: inherit;
 }
+.footer_social_icon:active img{
+    opacity: 0.3;
+}
 
-.copyright-text {
+.copyright_text {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
     color: var(--basic-black);
+}
+.icon_html:hover path {
+    fill: var(--blue);
+}
+.icon_html:active path {
+    fill: #BDBBBC;
 }
 
 
@@ -317,6 +335,12 @@ img {
 
 .filter_block {
     background-color: var(--blue);
+    background-image: url("../img/background-blur.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 217px;
+
 }
 .filter_hotels {
     display: flex;
@@ -429,6 +453,13 @@ img {
 .sort_icons {
     display: flex;
 }
+.sort_icon:hover path {
+    fill: var(--basic-black);
+    cursor: pointer;
+}
+.sort_icon:active path {
+    fill: var(--blue);
+}
 
 /* Каталог */
 
@@ -503,4 +534,3 @@ img {
     color: var(--rate);
     padding: 3px 12px 3px 15px;
 }
-
