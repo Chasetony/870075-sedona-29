@@ -62,20 +62,49 @@ img {
     height: auto;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     background: #FFFFFF;
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    position: relative;
 }
-
+.seo_text {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
 /* Меню */
 .main_banner {
     background-color: var(--blue);
 }
 
 /* Меню */
+.header_menu {
+    width: 100%;
+}
+.header_row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+}
+.menu_list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 .nav_menu li{
     list-style: none;
+}
+.header_logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    z-index: 50;
+    height: 70px;
 }
 .nav_link {
     color: var(--basic-black);
@@ -83,6 +112,18 @@ img {
     line-height: 26px;
     font-weight: 700;
     text-decoration: none;
+}
+.menu_list li:nth-child(1) {
+    padding: 0 67px 0 72px;
+}
+.menu_list li:nth-child(2) {
+    padding: 0 209px 0 67px;
+}
+.menu_list li:nth-child(3) {
+    padding: 0 73.5px 0 209px;
+}
+.menu_list li:nth-child(4) {
+    padding: 0 72px 0 73.5px;
 }
 .nav_link:hover {
     color: var(--blue);
@@ -98,6 +139,16 @@ img {
 /* Блок с главным баннером */
 
 /*  */
+.main_banner {
+    position: relative;
+    height: 509px;
+}
+.welcome_img {
+    position: absolute;
+    top: 76px;
+    left: 50%;
+    transform: translate(-50%, 0px)
+}
 .index_title {
     font-size: 21px;
     line-height: 26px;
@@ -111,6 +162,16 @@ img {
     font-weight: 400;
     text-align: center;
     color: var(--text-description);
+}
+
+.decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/Shape.svg");
+    background-repeat: no-repeat;
 }
 
 /* Преимущества */
@@ -132,12 +193,26 @@ img {
     text-align: center;
     color: var(--basic-white);
 }
+.cause_photo_first {
+    display: grid;
+    grid-template-columns: 400px 800px;
+}
+.cause_photo_second {
+    display: grid;
+    grid-template-columns: 800px 400px; 
+}
 
 /* Блок с иконками */
 .advertising {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 256px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 
 }
 .advent_icon {
@@ -163,7 +238,13 @@ img {
     background-color: var(--backgound-gray);
 }
 .advantages_gray {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 256px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 .advantages_gray li {
     list-style: none;
@@ -178,12 +259,14 @@ img {
 .advantages_gray_description {
     font-size: 14px;
     line-height: 21px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     color: var(--text-description);   
 }
 /* блок с выбором формы */
-
+.forms_block {
+    position: relative;
+}
 .forms_title {
     font-weight: 700;
     font-size: 30px;
@@ -229,6 +312,9 @@ img {
     background: var(--basic-white);
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .form_hotel {
     display: flex;
@@ -283,6 +369,11 @@ img {
 /* Футер */
 .main_footer {
     background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 .footer_left_side p {
     font-weight: bold;
@@ -294,6 +385,11 @@ img {
 .footer_left_side a {
     color: var(--basic-black);
     text-decoration: none;
+}
+.list_social_icon {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 .footer_social_icons li{
     list-style: none;

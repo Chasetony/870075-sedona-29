@@ -8,37 +8,36 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="container">
-    <header>
-      <nav class="nav_menu">
-        <ul>
-          <li><a class="nav_link" href="#">Информация</a></li>
-          <li><a class="nav_link" href="#">Фото и видео</a></li>
-        </ul>
-      </nav>
-      <a>
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona">
-      </a>
-      <nav class="nav_menu">
-        <ul>
-          <li><a class="nav_link" href="#">Карта штата</a></li>
-          <li><a class="nav_link" href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+    <header class="header_menu">
+      <div class="header_row">
+        <nav class="nav_menu">
+          <ul class="menu_list">
+            <li><a class="nav_link" href="#">Информация</a></li>
+            <li><a class="nav_link" href="#">Фото и видео</a></li>
+            <li><a class="nav_link" href="#">Карта штата</a></li>
+            <li><a class="nav_link" href="/hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <a class="header_logo">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип Sedona">
+        </a>
+      </div>
     </header>
 
     <main>
       <section class="main_banner">
-        <h1>Курортный город Седона</h1>
+        <h1 class="seo_text">Курортный город Седона</h1>
         <img src="img/background photo.jpg" width="1200" height="509" alt="Природа штата Седона">
-        <img src="img/welcome.svg" width="456" height="350" alt="Приветственный текст штата Седона">
+        <img class="welcome_img" src="img/welcome.svg" width="456" height="350" alt="Приветственный текст штата Седона">
+        <div class="decor"></div>
       </section>
 
       <section>
-        <h2 class="index_title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="index_title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
         <p class="index_description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
-      <section>
+      <section class="cause_photo_first">
         <div class="blue_fone">
           <p class="advantages_title">Настоящий городок</p>
           <p class="advantages_description">— №1 —</p>
@@ -67,7 +66,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="cause_photo_second">
         <img src="img/image-mount.jpg" width="800" height="256" alt="Фото зданий в штате Седона">
         <div class="blue_fone">
           <p class="advantages_title">Там есть Мост дьявола</p>
@@ -79,24 +78,24 @@
       <section class="advantages_gray_fone">
         <ul class="advantages_gray">
           <li>
-            <h3 class="advantages_gray_title">небольшая площадь</h3>
+            <h3 class="advantages_gray_title">небольшая <br>площадь</h3>
             <p class="advantages_gray_description">— №3 —</p>
-            <p class="advantages_gray_description">все достопримечательности находятся очень близко</p>
+            <p class="advantages_gray_description">все достопримечательности <br>находятся очень близко</p>
           </li>
           <li>
-            <h3 class="advantages_gray_title">красивая дорога</h3>
+            <h3 class="advantages_gray_title">красивая <br>дорога</h3>
             <p class="advantages_gray_description">— №4 —</p>
-            <p class="advantages_gray_description">ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="advantages_gray_description">ехать в седону из лас-вегаса совсем <br>не скучно!</p>
           </li>
           <li>
-            <h3 class="advantages_gray_title">Мало туристов</h3>
+            <h3 class="advantages_gray_title">Мало <br>туристов</h3>
             <p class="advantages_gray_description">— №5 —</p>
-            <p class="advantages_gray_description">большинство едет в гранд каньон и толпится там</p>
+            <p class="advantages_gray_description">большинство едет в гранд каньон <br>и толпится там</p>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section class="forms_block">
         <p class="forms_title">Заинтересовались</p>
         <p class="forms_description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="forms_button" type="button">Поиск гостиницы в седоне</button>
@@ -126,6 +125,7 @@
 
       <section>
           <!-- Здесь будет карта -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18314.070733928525!2d82.90505934999999!3d54.98609559999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1600671747834!5m2!1sru!2sru" width="1200" height="594" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
 
     </main>
@@ -138,7 +138,7 @@
       </section>
 
       <section class="footer_social_icons">
-        <ul>
+        <ul class="list_social_icon">
           <li class="footer_social_icon">
             <a href="#">
               <img src="img/twitter.svg" width="17" height="17" alt="Твиттер">
