@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,33 +26,35 @@
 
     <main>
         <section class="filter_block">
-            <h2 class="seo_text">Фильтр гостиниц</h2>
+          <h2 class="seo_text">Фильтр гостиниц</h2>
+          <div class="container_inside_page">
             <form class="filter_hotels" action="https://echo.htmlacademy.ru/" method="GET">
-              
-              <fieldset class="filter_items">
-                <legend>Инфрастуктура:</legend>
-                <input  class="custom_checkbox" type="checkbox" name="pool" id="pool">
-                <label class="filter_label" for="pool">Бассейн</label>
+              <div class="filter_wrapper">
+                <fieldset class="filter_items">
+                  <legend>Инфрастуктура:</legend>
+                  <input  class="custom_checkbox" type="checkbox" name="pool" id="pool">
+                  <label class="filter_label" for="pool">Бассейн</label>
 
-                <input class="custom_checkbox" type="checkbox" name="parking" id="parking">
-                <label class="filter_label" for="parking">Парковка</label>
+                  <input class="custom_checkbox" type="checkbox" name="parking" id="parking">
+                  <label class="filter_label" for="parking">Парковка</label>
 
-                <input class="custom_checkbox" type="checkbox" name="wifi" id="wifi">
-                <label class="filter_label" for="wifi">wi-fi</label>
-              </fieldset>
+                  <input class="custom_checkbox" type="checkbox" name="wifi" id="wifi">
+                  <label class="filter_label" for="wifi">wi-fi</label>
+                </fieldset>
 
-              <fieldset class="filter_items">
-                <legend>Тип жилья:</legend>
-                <input class="custom_checkbox" type="checkbox" name="hotel" id="hotel">
-                <label class="filter_label" for="hotel">Гостиница</label>
+                <fieldset class="filter_items">
+                  <legend>Тип жилья:</legend>
+                  <input class="custom_checkbox" type="checkbox" name="hotel" id="hotel">
+                  <label class="filter_label" for="hotel">Гостиница</label>
 
-                <input class="custom_checkbox" type="checkbox" name="motel" id="motel">
-                <label class="filter_label" for="motel">Мотель</label>
+                  <input class="custom_checkbox" type="checkbox" name="motel" id="motel">
+                  <label class="filter_label" for="motel">Мотель</label>
 
-                <input class="custom_checkbox" type="checkbox" name="appartment" id="appartment">
-                <label class="filter_label" for="appartment">Аппартаменты</label>
-              </fieldset>
-
+                  <input class="custom_checkbox" type="checkbox" name="appartment" id="appartment">
+                  <label class="filter_label" for="appartment">Аппартаменты</label>
+                </fieldset>
+              </div>
+              <div>
               <fieldset class="filter_items">
               <legend>Стоимость в сутки (р):</legend>
               <output name="cost"></output>
@@ -60,10 +62,13 @@
 
               <button class="btn_show" type="submit">Показать</button>
               </fieldset>
+            </div>
+          </div>
             </form>
         </section>
 
-        <section class="sorting">
+        <section>
+          <div class="container_inside_page sorting"> 
             <h3 class="sort_title">Найдено: 3</h3>
             <p class="sort_index_items">Сортировка:</p>
             <ul class="sort_items">
@@ -75,7 +80,6 @@
             <ul class="sort_icons">
                 <li  class="sort_item">
                   <a>
-                    <!-- <img src="https://via.placeholder.com/11x10" alt="Иконка вверх"> -->
                     <svg class="sort_icon" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
                     </svg>
@@ -83,18 +87,19 @@
                 </li>
                 <li  class="sort_item">
                   <a>
-                    <!-- <img src="https://via.placeholder.com/11x10" alt="Иконка вниз"> -->
                     <svg class="sort_icon" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
                     </svg>
                   </a>
                 </li>
             </ul>
+          </div>
         </section>
 
         <section class="catalog">
-            <article>
-                <img src="img/hotel.png" width="135" height="90" alt="Фотография гостиницы">
+            <article class="catalog_liner">
+              <div class="container_inside_page grid-wrapper">
+                <img class="picture_otel" src="img/hotel.png" width="135" height="90" alt="Фотография гостиницы">
                 <h3 class="catalog_title"><a>Amara Resort & Spa</a></h3>
                 <p class="catalog_hotel">Гостиница</p>
                 <p class="catalog_cost">от 4000 р.</p>
@@ -107,10 +112,12 @@
                     <li><img src="img/star.svg" width="19" height="17" alt="Звезда рейтинга"></li>
                 </ul>
                 <span class="catalog_rating_number">Рейтинг: 8,5</span>
+              </div>
             </article>
 
-            <article>
-                <img src="img/motel.png" width="135" height="90" alt="Фотография гостиницы">
+            <article class="catalog_liner">
+              <div class="container_inside_page grid-wrapper">
+                <img class="picture_otel" src="img/motel.png" width="135" height="90" alt="Фотография гостиницы">
                 <h3 class="catalog_title"><a>Desert Quail Inn</a></h3>
                 <p class="catalog_hotel">Мотель</p>
                 <p class="catalog_cost">от 3000 р.</p>
@@ -122,10 +129,12 @@
                     <li><img src="img/star.svg" width="19" height="17" alt="Звезда рейтинга"></li>
                 </ul>
                 <span class="catalog_rating_number">Рейтинг: 8,9</span>
+              </div>
             </article>
 
-            <article>
-                <img src="img/appart.png" width="135" height="90" alt="Фотография гостиницы">
+            <article class="catalog_liner">
+              <div class="container_inside_page grid-wrapper">
+                <img class="picture_otel" src="img/appart.png" width="135" height="90" alt="Фотография гостиницы">
                 <h3 class="catalog_title"><a>Villas at Poco Diablo</a></h3>
                 <p class="catalog_hotel">Апартаменты</p>
                 <p class="catalog_cost">от 2000 р.</p>
@@ -136,6 +145,7 @@
                     <li><img src="img/star.svg" width="19" height="17" alt="Звезда рейтинга"></li>
                 </ul>
                 <span class="catalog_rating_number">Рейтинг: 9,2</span>
+              </div>
             </article>
         </section>
 

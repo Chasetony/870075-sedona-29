@@ -35,6 +35,7 @@
     --brown-active: #503E33;
 
     --backgound-gray: #EEEEEE;
+    --decor-gray: #E5E5E5;;
 
     /* Инпуты */
     --input-gray: #F2F2F2;
@@ -57,6 +58,9 @@ body {
     text-transform: uppercase;
     background: #F2F2F2;
 }
+.page {
+    height: 100%;
+  }
 img {
     max-width: 100%;
     height: auto;
@@ -67,6 +71,7 @@ img {
     background: #FFFFFF;
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
     position: relative;
+    min-height: 100%;
 }
 .seo_text {
     position: absolute;
@@ -375,6 +380,12 @@ img {
     justify-content: space-around;
     width: 100%;
 }
+/* .inside_footer {
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+} */
 .footer_left_side p {
     font-weight: bold;
     font-size: 21px;
@@ -427,7 +438,10 @@ img {
 
 
 /* Страница каталога */
-
+.container_inside_page {
+    width: 1054px;
+    margin: 0 auto;
+}
 
 .filter_block {
     background-color: var(--blue);
@@ -439,12 +453,19 @@ img {
 
 }
 .filter_hotels {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr auto;
 
+}
+.filter_wrapper {
+    display: flex;
 }
 .filter_items {
     display: flex;
     border: none;
+    padding: 0;
+    margin: 0;
 }
 .filter_items legend{
     font-weight: 700;
@@ -512,21 +533,31 @@ img {
 
 .sorting {
     display: flex;
+    height: 86px;
+    align-items: center;
 }
 .sort_title {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+    margin: 0;
+    margin-right: 46px;
   }
 .sort_index_items {
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     color: var(--basic-black);
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
   }
 .sort_items {
     display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
 }
 .sort_items a {
     text-decoration: none;
@@ -548,6 +579,10 @@ img {
 }
 .sort_icons {
     display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
 }
 .sort_icon:hover path {
     fill: var(--basic-black);
@@ -559,12 +594,33 @@ img {
 
 /* Каталог */
 
+.catalog_liner {
+    border-top: 1px solid var(--decor-gray);
+}
+.catalog_liner:last-child {
+    border-bottom: 1px solid var(--decor-gray);
+}
+.grid-wrapper {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.picture_otel {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    align-self: center;
+    margin-right: 29px;
+}
 .catalog_title {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
     cursor: pointer;
+    margin: 0;
+    grid-row: 1;
+    grid-column: 2 / 4;
 }
 .catalog_title:hover {
     color: var(--blue);
@@ -577,12 +633,20 @@ img {
     font-size: 14px;
     line-height: 21px;
     color: var(--text-description);
+    margin: 0;
+    grid-row: 2;
+    grid-column: 3 / 3;
+    align-self: center;
 }
 .catalog_hotel {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: var(--text-description);    
+    color: var(--text-description);
+    margin: 0;
+    grid-row: 2;
+    grid-column: 2 / 3;
+    align-self: center;
 }
 
 .btn {
@@ -598,6 +662,10 @@ img {
 .btn_more {
     width: 110px;
     background-color: var(--blue);
+    grid-row: 3;
+    grid-column: 2 / 3; 
+    align-self: end;
+    margin-right: 6px;
 }
 .btn_more:hover {
     background-color: var(--blue-hover);
@@ -609,6 +677,9 @@ img {
 .btn_reserv {
     width: 142px;
     background-color: var(--brown);
+    grid-row: 3;
+    grid-column: 3 / 3;
+    align-self: end;
 }
 .btn_reserv:hover {
     background-color: var(--brown-hover);
@@ -619,14 +690,24 @@ img {
 }
 .catalog_rating {
     display: flex;
+    justify-content: flex-end;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-row: 1;
+    grid-column-start: -1; 
 }
 .catalog_rating_number {
     background-color: var(--input-gray);
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 27px;
     text-align: center;
     color: var(--rate);
-    padding: 3px 12px 3px 15px;
+    /* padding: 3px 12px 3px 15px; */
+    width: 110px;
+    height: 27px;
+    grid-row-start: 3;
+    grid-column-start: -1;
+    align-self: end; 
 }
