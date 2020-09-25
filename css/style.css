@@ -147,6 +147,7 @@ img {
 .main_banner {
     position: relative;
     height: 509px;
+    margin-bottom: 43px;
 }
 .welcome_img {
     position: absolute;
@@ -160,6 +161,7 @@ img {
     font-weight: 700;
     text-align: center;
     color: inherit;
+    margin-bottom: 43px;
 }
 .index_description {
     font-size: 14px;
@@ -167,6 +169,7 @@ img {
     font-weight: 400;
     text-align: center;
     color: var(--text-description);
+    margin-bottom: 51px;
 }
 
 .decor {
@@ -190,6 +193,7 @@ img {
     font-weight: 700;
     text-align: center;
     color: var(--basic-white);
+    margin-top: 47px;
 }
 .advantages_description {
     font-size: 14px;
@@ -197,10 +201,13 @@ img {
     font-weight: 700;
     text-align: center;
     color: var(--basic-white);
+    margin-top: 26px;
+    margin-bottom: 25px
 }
 .cause_photo_first {
     display: grid;
     grid-template-columns: 400px 800px;
+    margin-bottom: 27px;
 }
 .cause_photo_second {
     display: grid;
@@ -208,9 +215,11 @@ img {
 }
 
 /* Блок с иконками */
+.advertising_block {
+    margin-bottom: 47px;
+}
 .advertising {
     list-style: none;
-    /* display: flex; */
     justify-content: space-around;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -218,7 +227,6 @@ img {
     align-items: center;
     margin: 0;
     padding: 0;
-
 }
 .advent_icon {
     display: block;
@@ -230,6 +238,9 @@ img {
     font-size: 21px;
     line-height: 21px;
     color: var(--basic-black);
+    margin: 0;
+    margin-top: 28px;
+    margin-bottom: 25px;
 }
 .advent_description {
     text-align: center;
@@ -237,15 +248,17 @@ img {
     font-size: 14px;
     line-height: 21px;
     color: var(--text-description);
+    margin: 0;
 }
 /*  */
 .advantages_gray_fone {
     background-color: var(--backgound-gray);
+    min-height: 256px;
 }
 .advantages_gray {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 256px;
+    grid-template-rows: auto;
     justify-content: space-around;
     align-items: center;
     padding: 0;
@@ -260,13 +273,17 @@ img {
     font-weight: 700;
     text-align: center;
     color: var(--basic-black);
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 48px;
 }
 .advantages_gray_description {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
     text-align: center;
-    color: var(--text-description);   
+    color: var(--text-description); 
+    margin-bottom: 23px;  
 }
 /* блок с выбором формы */
 .forms_block {
@@ -278,13 +295,18 @@ img {
     line-height: 24px;
     text-align: center;
     color: var(--basic-black);
+    margin: 0;
+    padding-top: 61px;
+    margin-bottom: 31px;
 }
 .forms_description {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
-    color: var(--text-description); 
+    color: var(--text-description);
+    margin: 0; 
+    margin-bottom: 41px;
 }
 .forms_button {
     font-weight: bold;
@@ -336,6 +358,7 @@ img {
 .form_hotel input {
     background-color: var(--input-gray);
     height: 38px;
+    width: 100%;
     border: none;
     color: inherit;
     font-weight: 700;
@@ -348,7 +371,7 @@ img {
 }
 .form_hotel input:focus {
     background: var(--input-gray);
-    border: 2px solid #E5E5E5;
+    border: 2px solid var(--decor-gray);
     box-sizing: border-box;
 }
 .form_hotel button {
@@ -370,6 +393,9 @@ img {
 .form_hotel button {
     background-color: var(--blue-active);
 }
+.maps {
+    height: 594px;
+}
 
 /* Футер */
 .main_footer {
@@ -377,8 +403,9 @@ img {
     position: absolute;
     bottom: 0;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 100%;
+    height: 120px;
 }
 /* .inside_footer {
     background: rgba(255, 255, 255, 0.9);
@@ -386,48 +413,79 @@ img {
     justify-content: space-around;
     width: 100%;
 } */
+.footer_left_side {
+    margin-left: 105px;
+    margin-right: 177px;
+}
 .footer_left_side p {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
     color: var(--basic-black);
+    margin: 0;
+}
+.footer_left_side p:first-child {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    margin-left: 19px;
+}
+.footer_left_side p:last-child {
+    margin-left: 19px;
 }
 .footer_left_side a {
     color: var(--basic-black);
     text-decoration: none;
 }
+.footer_social_icons {
+    display: flex;
+    margin-right: 190px;
+}
+
 .list_social_icon {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
+    gap: 6px;
 }
 .footer_social_icons li{
     list-style: none;
+}
+.coub {
     width: 46px;
     height: 48px;
-    background-color: var(--blue);
+    background-color: var(--blue);    
 }
-.footer_social_icon:hover{
+.coub img {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+.coub:hover{
     background-color: var(--blue-hover);
 }
-.footer_social_icon:active{
+.coub:active{
     background-color: var(--blue-active);
 }
-.footer_social_icon a{
-    text-decoration: none;
-    color: inherit;
-}
-.footer_social_icon:active img{
+.coub:active img {
     opacity: 0.3;
 }
 
+.copyright {
+    display: flex;
+    align-items: center;
+}
 .copyright_text {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
     color: var(--basic-black);
+    margin: 0;
+    margin-right: 9px;
 }
 .icon_html:hover path {
     fill: var(--blue);
@@ -552,12 +610,14 @@ img {
     margin: 0;
     padding: 0;
     margin-right: 40px;
+    margin-bottom: 6px;
   }
 .sort_items {
     display: flex;
-    gap: 32px;
+    gap: 34px;
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
 }
 .sort_items a {
     text-decoration: none;
@@ -576,6 +636,9 @@ img {
 }
 .sort_item {
     list-style: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
 }
 .sort_icons {
     display: flex;
@@ -619,6 +682,7 @@ img {
     color: var(--basic-black);
     cursor: pointer;
     margin: 0;
+    margin-top: -5px;
     grid-row: 1;
     grid-column: 2 / 4;
 }
@@ -634,9 +698,10 @@ img {
     line-height: 21px;
     color: var(--text-description);
     margin: 0;
+    margin-top: -4px;
     grid-row: 2;
     grid-column: 3 / 3;
-    align-self: center;
+    align-self: self-start;
 }
 .catalog_hotel {
     font-weight: 400;
@@ -644,9 +709,10 @@ img {
     line-height: 21px;
     color: var(--text-description);
     margin: 0;
+    margin-top: -4px;
     grid-row: 2;
     grid-column: 2 / 3;
-    align-self: center;
+    align-self: self-start;
 }
 
 .btn {
@@ -695,7 +761,8 @@ img {
     margin: 0;
     padding: 0;
     grid-row: 1;
-    grid-column-start: -1; 
+    grid-column-start: -1;
+    gap: 4px;
 }
 .catalog_rating_number {
     background-color: var(--input-gray);
