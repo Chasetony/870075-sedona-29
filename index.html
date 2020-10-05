@@ -102,21 +102,24 @@
 
         <section class="modal_hotel">
           <form class="form_hotel" action="https://echo.htmlacademy.ru/" method="post">
-            <div>
-              <label for="date-input">Дата заезда:</label>
-              <input type="text" name="date-input" id="date-input">
+            <div class="form_wrapper">
+              <label class="label_date" for="date-input">Дата заезда:</label>
+              <input class="date_input" type="text" name="date-input" id="date-input">
             </div>
-            <div>
-              <label for="date-output">Дата выезда:</label>
-              <input type="text" name="date-output" id="date-output">
+            <div class="form_wrapper">
+              <label class="label_date" for="date-output">Дата выезда:</label>
+              <input class="date_input" type="text" name="date-output" id="date-output">
             </div>
-            <div>
-              <label for="adults">Взрослые:</label>
-              <input type="number" min="1" max="50" step="1" id="adults" name="adults">
-            
-              <label for="children">Дети:</label>
-              <input type="number" min="1" max="50" step="1" id="children" name="children">
-             </div>
+            <div class="form_wrapper adults_wrapper">
+              <div class="adults_inputs">
+                <label class="label_adults" for="adults">Взрослые:</label>
+                <input class="adult_input" type="number" min="1" max="50" step="1" id="adults" name="adults">
+              </div>
+              <div class="adults_inputs">
+                <label class="label_children" for="children">Дети:</label>
+                <input class="adult_input" type="number" min="1" max="50" step="1" id="children" name="children">
+              </div>
+              </div>
     
             <button type="submit" value="Найти">Найти</button>
           </form>

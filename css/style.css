@@ -40,6 +40,8 @@
     /* Инпуты */
     --input-gray: #F2F2F2;
     --input-gray-hover: #EBEBEB;
+    --input-minplus: #A9A9A9;
+    --input-minplus-active: #81B3D2;
 
     /* Рейтинг */
     --rate: #666666;
@@ -77,9 +79,15 @@ img {
 }
 .seo_text {
     position: absolute;
-    visibility: hidden;
     width: 1px;
     height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* Меню */
 .main_banner {
@@ -357,23 +365,60 @@ img {
     line-height: 26px;
     color: var(--basic-black);
 }
+.form_wrapper:first-of-type {
+    margin-top: 55px;
+}
+.form_wrapper:last-of-type {
+    margin-bottom: 23px;
+}
+.form_wrapper {
+    display: flex;
+    align-items: center;
+    width: 458px;
+}
+.label_date,
+.label_adults {
+    min-width: 100px;
+    padding-right: 12px;
+    cursor: pointer;
+}
+.label_children {
+    padding-right: 27px;
+}
+.adults_wrapper {
+    justify-content: space-between;
+}
+.adults_inputs {
+    display: flex;
+    align-items: center;
+}
 .form_hotel input {
     background-color: var(--input-gray);
     height: 38px;
-    width: 100%;
     border: none;
     color: inherit;
+    font: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
-    padding-left: 6px;
+    outline: none;
+    padding-left: 13px;
 }
-.form_hotel input:hover {
-    background-color: var(--input-gray-hover);
+.date_input {
+    width: 346px;
+    padding: 0;
+}
+.adult_input {
+    width: 114px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
 }
 .form_hotel input:focus {
-    background: var(--input-gray);
+    background: white;
     border: 2px solid var(--decor-gray);
+    padding-left: 13px;
     box-sizing: border-box;
 }
 .form_hotel button {
