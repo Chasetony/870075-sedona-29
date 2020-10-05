@@ -31,36 +31,68 @@
             <form class="filter_hotels" action="https://echo.htmlacademy.ru/" method="GET">
               <div class="filter_wrapper">
                 <fieldset class="filter_items">
-                  <legend>Инфрастуктура:</legend>
-                  <input  class="custom_checkbox" type="checkbox" name="pool" id="pool">
-                  <label class="filter_label" for="pool">Бассейн</label>
-
-                  <input class="custom_checkbox" type="checkbox" name="parking" id="parking">
-                  <label class="filter_label" for="parking">Парковка</label>
-
-                  <input class="custom_checkbox" type="checkbox" name="wifi" id="wifi">
-                  <label class="filter_label" for="wifi">wi-fi</label>
+                  <legend class="filter_legend">Инфраструктура:</legend>
+                  <ul>
+                    <li>
+                      <input class="custom_checkbox seo_text" type="checkbox" name="pool" id="pool">
+                      <label class="filter_label" for="pool">Бассейн</label>
+                    </li>
+                    <li>
+                      <input class="custom_checkbox seo_text" type="checkbox" name="parking" id="parking">
+                      <label class="filter_label" for="parking">Парковка</label>
+                    </li>
+                    <li>
+                      <input class="custom_checkbox seo_text" type="checkbox" name="wifi" id="wifi">
+                      <label class="filter_label" for="wifi">wi-fi</label>
+                    </li>
+                  </ul>
                 </fieldset>
 
                 <fieldset class="filter_items">
-                  <legend>Тип жилья:</legend>
-                  <input class="custom_checkbox" type="checkbox" name="hotel" id="hotel">
-                  <label class="filter_label" for="hotel">Гостиница</label>
-
-                  <input class="custom_checkbox" type="checkbox" name="motel" id="motel">
-                  <label class="filter_label" for="motel">Мотель</label>
-
-                  <input class="custom_checkbox" type="checkbox" name="appartment" id="appartment">
-                  <label class="filter_label" for="appartment">Аппартаменты</label>
+                  <legend class="filter_legend">Тип жилья:</legend>
+                  <ul>
+                    <li>
+                      <input class="custom_checkbox seo_text" type="checkbox" name="hotel" id="hotel">
+                      <label class="filter_label" for="hotel">Гостиница</label>
+                    </li>
+                    <li>
+                      <input class="custom_checkbox seo_text" type="checkbox" name="motel" id="motel">
+                      <label class="filter_label" for="motel">Мотель</label>
+                    </li>
+                    <li>
+                      <input class="custom_checkbox seo_text" type="checkbox" name="appartment" id="appartment">
+                      <label class="filter_label" for="appartment">Апартаменты</label>
+                    </li>
+                  </ul>
                 </fieldset>
               </div>
-              <div>
-              <fieldset class="filter_items">
-              <legend>Стоимость в сутки (р):</legend>
-              <output name="cost"></output>
-              <input type="range" name="cost" id="rangecost" min="0" max="3000" step="10">
+              <div class="filter_wrapper ">
+              <fieldset class="filter_items range_wrapper">
+                <legend class="filter_legend filter_legend_range">Стоимость в сутки (р):</legend>
+                <div class="range-filter">
 
-              <button class="btn_show" type="submit">Показать</button>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0" placeholder="от 0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="3000" placeholder="до 3000">
+                    </label>
+                  </div>
+
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+
+
+
+                </div>
+
+                <button class="btn_show" type="submit">Показать</button>
               </fieldset>
             </div>
             </form>
@@ -100,7 +132,7 @@
             <article class="catalog_liner">
               <div class="container_inside_page grid-wrapper">
                 <img class="picture_otel" src="img/hotel.png" width="135" height="90" alt="Фотография гостиницы">
-                <a><h3 class="catalog_title">Amara Resort & Spa</h3></a>
+                <h3 class="catalog_title"><a>Amara Resort & Spa</a></h3>
                 <p class="catalog_hotel">Гостиница</p>
                 <p class="catalog_cost">от 4000 р.</p>
                 <button class="btn_more btn" type="button">Подробнее</button>
