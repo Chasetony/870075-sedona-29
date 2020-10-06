@@ -299,6 +299,7 @@ img {
 /* блок с выбором формы */
 .forms_block {
     position: relative;
+    background-color: var(--basic-white);
 }
 .forms_title {
     font-weight: 700;
@@ -333,6 +334,7 @@ img {
     height: 86px;
     display: block;
     margin: 0 auto;
+    outline: none;
 
 
 }
@@ -353,6 +355,7 @@ img {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    /* z-index: -2; */
 }
 .form_hotel {
     display: flex;
@@ -404,22 +407,70 @@ img {
     line-height: 26px;
     outline: none;
     padding-left: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 .date_input {
     width: 346px;
     padding: 0;
 }
-.adult_input {
-    width: 114px;
-    text-align: center;
-    box-sizing: border-box;
+.date_calendar_wrapper {
     position: relative;
-    display: block;
 }
-.form_hotel input:focus {
-    background: white;
+.date_calendar_wrapper svg{
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    cursor: pointer;
+}
+.icon_calendar:hover path{
+    fill: var(--basic-black);
+}
+.icon_calendar:active path{
+    fill: var(--blue);
+}
+
+.input_group {
+    display: flex;
+    width: 114px;
+  }
+  
+  .input_group input[type='button'] {
+    min-width: 38px;
+  }
+  
+  .input_group .button_minus,
+  .input_group .button_plus {
+    padding: 0;
+    position: relative;
+    color: var(--input-minplus);
+    font-size: 20px;
+  }
+  .input_group .button_minus:hover,
+  .input_group .button_plus:hover {
+    color: var(--basic-black);
+  }
+  .input_group .button_minus:active,
+  .input_group .button_plus:active {
+    color: var(--blue);
+  }
+  
+  .input_group .quantity_field {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+.form_hotel input[type="text"]:hover,
+.form_hotel input[type="number"]:hover {
+    background: var(--input-gray-hover);
+
+}
+.form_hotel input[type="text"]:focus,
+.form_hotel input[type="number"]:focus {
+    background: var(--basic-white);
     border: 2px solid var(--decor-gray);
-    padding-left: 13px;
+    padding-left: 11px;
     box-sizing: border-box;
 }
 .form_hotel button {
@@ -434,12 +485,19 @@ img {
     background-color: var(--blue);
     border: none;
     cursor: pointer;
+    outline: none;
 }
 .form_hotel button:hover {
     background-color: var(--blue-hover);
 }
 .form_hotel button {
     background-color: var(--blue-active);
+}
+/* код для анимации появление попапа */
+.modal_hotel_active {
+    pointer-events: none;
+    transform: translate( -50%, -100%);
+    transition: all 0.5s ease 0s;
 }
 .maps {
     height: 594px;
