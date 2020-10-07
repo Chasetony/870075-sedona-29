@@ -265,6 +265,8 @@ img {
 .advantages_gray_fone {
     background-color: var(--backgound-gray);
     min-height: 256px;
+    z-index: 5;
+    position: relative;
 }
 .advantages_gray {
     display: grid;
@@ -300,6 +302,7 @@ img {
 .forms_block {
     position: relative;
     background-color: var(--basic-white);
+    z-index: 5;
 }
 .forms_title {
     font-weight: 700;
@@ -355,7 +358,7 @@ img {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    /* z-index: -2; */
+    z-index: 1;
 }
 .form_hotel {
     display: flex;
@@ -660,6 +663,7 @@ img {
     padding: 0;
     list-style: none;
     margin-bottom: 22px;
+    position: relative;  
 }
 .filter_label {
     font-weight: 400;
@@ -667,15 +671,20 @@ img {
     line-height: 21px;
     color: var(--basic-white);
     margin-left: 40px;
-}
-.custom_checkbox + label {
-    position: relative;
-    display: inline-flex;
-    /* align-items: center; */
-    user-select: none;
     cursor: pointer;
 }
-.custom_checkbox + label::before {
+.filter_label img{
+    position: absolute;
+    left: 0;
+}
+.custom_checkbox + label {
+    /* position: relative; */
+    /* display: inline-flex; */
+    align-items: center;
+    user-select: none;
+    cursor: pointer;  
+}
+/* .custom_checkbox + label::before {
     content: "";
     position: absolute;
     top: 0;
@@ -693,8 +702,20 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 1px;
-    left: -37px;
+    top: 0px;
+    left: -41px;
+} */
+.custom_checkbox ~ .checkbox-off{
+    display: inline;
+} 
+.custom_checkbox ~ .checkbox-on{
+    display: none;
+}
+.custom_checkbox:checked ~ .checkbox-off{
+    display: none;
+}
+.custom_checkbox:checked ~ .checkbox-on{
+    display: inline;
 }
 .btn_show {
     width: 137px;
@@ -709,6 +730,7 @@ img {
     text-transform: uppercase;
     background: transparent;
     cursor: pointer;
+    outline: none;
     margin-left: auto;
     margin-right: auto;
 }
@@ -722,27 +744,27 @@ img {
     box-sizing: border-box;
     border-radius: 2px;
 }
-.price-controls {
+.price_controls {
     display: flex;
     margin-bottom: 11px;
 }
-.range-controls {
+.range_controls {
     position: relative;
     height: 21px;
     padding-top: 9px;
     margin-bottom: 14px;
-  }
-  .range-controls .scale {
+}
+.range_controls .scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);;
     mix-blend-mode: normal;
-  }
-  .range-controls .bar {
+}
+.range_controls .bar {
     width: 80%;
     height: 2px;
     background: var(--basic-white);
-  }
-  .range-controls .toggle {
+}
+.range_controls .toggle {
     position: absolute;
     top: 0;
     left: 0;
@@ -754,19 +776,23 @@ img {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 var(--input-range);
     cursor: pointer;
-  }
-  .range-controls .toggle-min {
+    outline: none;
+}
+.range_controls .toggle:hover {
+    transform: scale(1.2);
+}
+.range_controls .toggle_min {
     left: 0;
-  }
-  
-  .range-controls .toggle-max {
+}
+.range_controls .toggle_max {
     left: 80%;
-  }
-  .price-controls {
+}
+.price_controls {
     display: flex;
     justify-content: space-between;
-  }
-  .price-controls label {
+    border: 2px solid var(--basic-white);
+}
+.price_controls label {
     text-transform: uppercase;
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
@@ -774,20 +800,34 @@ img {
     color: var(--basic-white);
     cursor: pointer;
     user-select: none;
-  }
-  .price-controls input {
+    height: 32px;
+}
+.price_controls input {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
     background-color: transparent;
-    border: 2px solid var(--basic-white) ;
     outline: none;
     text-align: center;
-    width: 60px;
-    padding: 8px;
-    margin-left: 10px;
-  }
+    width: 139px;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+.min_price_input {
+    border: 1px solid transparent;
+    border-right: 2px solid var(--basic-white);
+}
+.max_price_input {
+    border: none;
+}
 
+.price_controls input::placeholder {
+    color: var(--basic-white);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
 
 /* Сортировка */
 

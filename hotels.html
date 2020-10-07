@@ -34,16 +34,27 @@
                   <legend class="filter_legend">Инфраструктура:</legend>
                   <ul>
                     <li>
+                      <label class="filter_label" for="pool">
                       <input class="custom_checkbox seo_text" type="checkbox" name="pool" id="pool">
-                      <label class="filter_label" for="pool">Бассейн</label>
+                      <img src="img/checkbox-off.svg" alt="checkbox-off" class="checkbox-off">
+                      <img src="img/checkbox-on.svg" alt="checkbox-on" class="checkbox-on">
+                      Бассейн
+                    </label>
                     </li>
                     <li>
-                      <input class="custom_checkbox seo_text" type="checkbox" name="parking" id="parking">
-                      <label class="filter_label" for="parking">Парковка</label>
+                      <label class="filter_label" for="parking">
+                        <input class="custom_checkbox seo_text" type="checkbox" name="parking" id="parking">
+                        <img src="img/checkbox-off.svg" alt="checkbox-off" class="checkbox-off">
+                        <img src="img/checkbox-on.svg" alt="checkbox-on" class="checkbox-on">
+                        Парковка
+                      </label>
                     </li>
                     <li>
-                      <input class="custom_checkbox seo_text" type="checkbox" name="wifi" id="wifi">
-                      <label class="filter_label" for="wifi">wi-fi</label>
+                      <label class="filter_label" for="wifi">
+                        <input class="custom_checkbox seo_text" type="checkbox" name="wifi" id="wifi">
+                        <img src="img/checkbox-off.svg" alt="checkbox-off" class="checkbox-off">
+                        <img src="img/checkbox-on.svg" alt="checkbox-on" class="checkbox-on">
+                        wi-fi</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -52,16 +63,28 @@
                   <legend class="filter_legend">Тип жилья:</legend>
                   <ul>
                     <li>
-                      <input class="custom_checkbox seo_text" type="checkbox" name="hotel" id="hotel">
-                      <label class="filter_label" for="hotel">Гостиница</label>
+                      <label class="filter_label" for="hotel">
+                        <input class="custom_checkbox seo_text" type="checkbox" name="hotel" id="hotel">
+                        <img src="img/checkbox-off.svg" alt="checkbox-off" class="checkbox-off">
+                        <img src="img/checkbox-on.svg" alt="checkbox-on" class="checkbox-on">
+                        Гостиница
+                      </label>
                     </li>
                     <li>
-                      <input class="custom_checkbox seo_text" type="checkbox" name="motel" id="motel">
-                      <label class="filter_label" for="motel">Мотель</label>
+                      <label class="filter_label" for="motel">
+                        <input class="custom_checkbox seo_text" type="checkbox" name="motel" id="motel">
+                        <img src="img/checkbox-off.svg" alt="checkbox-off" class="checkbox-off">
+                        <img src="img/checkbox-on.svg" alt="checkbox-on" class="checkbox-on">
+                        Мотель
+                      </label>
                     </li>
                     <li>
-                      <input class="custom_checkbox seo_text" type="checkbox" name="appartment" id="appartment">
-                      <label class="filter_label" for="appartment">Апартаменты</label>
+                      <label class="filter_label" for="appartment">
+                        <input class="custom_checkbox seo_text" type="checkbox" name="appartment" id="appartment">
+                        <img src="img/checkbox-off.svg" alt="checkbox-off" class="checkbox-off">
+                        <img src="img/checkbox-on.svg" alt="checkbox-on" class="checkbox-on">
+                        Апартаменты
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -71,24 +94,22 @@
                 <legend class="filter_legend filter_legend_range">Стоимость в сутки (р):</legend>
                 <div class="range-filter">
 
-                  <div class="price-controls">
-                    <label class="min-price">
-                      от <input type="number" name="min-price" value="0" placeholder="от 0">
+                  <div class="price_controls">
+                    <label class="min_price">
+                      <input class="min_price_input"  type="number" name="min-price" placeholder="от 0" min="1" max="5000">
                     </label>
-                    <label class="max-price">
-                      до <input type="number" name="max-price" value="3000" placeholder="до 3000">
+                    <label class="max_price">
+                      <input class="max_price_input" type="number" name="max-price" placeholder="до 3000" min="1" max="5000">
                     </label>
                   </div>
 
-                  <div class="range-controls">
+                  <div class="range_controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle_min" tabindex="0"></div>
+                    <div class="toggle toggle_max" tabindex="0"></div>
                   </div>
-
-
 
                 </div>
 
