@@ -717,6 +717,10 @@ img {
 .custom_checkbox:checked ~ .checkbox-on{
     display: inline;
 }
+.custom_checkbox:focus ~ .checkbox-off, 
+.custom_checkbox:focus ~ .checkbox-on {
+    outline: auto;
+}
 .btn_show {
     width: 137px;
     height: 36px;
@@ -921,17 +925,19 @@ img {
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
-    color: var(--basic-black);
-    cursor: pointer;
     margin: 0;
     margin-top: -5px;
     grid-row: 1;
     grid-column: 2 / 4;
 }
-.catalog_title:hover {
+.catalog_title a {
+    color: var(--basic-black);
+    text-decoration: none;
+}
+.catalog_title a:hover {
     color: var(--blue);
 }
-.catalog_title:active {
+.catalog_title a:active {
     color: rgba(0, 0, 0, 0.3);
 }
 .catalog_cost {
