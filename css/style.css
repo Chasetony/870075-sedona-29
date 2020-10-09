@@ -337,7 +337,7 @@ img {
     height: 86px;
     display: block;
     margin: 0 auto;
-    outline: none;
+    /* outline: none; */
 
 
 }
@@ -408,7 +408,7 @@ img {
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
-    outline: none;
+    /* outline: none; */
     padding-left: 13px;
     box-sizing: border-box;
     cursor: pointer;
@@ -488,7 +488,7 @@ img {
     background-color: var(--blue);
     border: none;
     cursor: pointer;
-    outline: none;
+    /* outline: none; */
 }
 .form_hotel button:hover {
     background-color: var(--blue-hover);
@@ -730,7 +730,7 @@ img {
     text-transform: uppercase;
     background: transparent;
     cursor: pointer;
-    outline: none;
+    /* outline: none; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -776,7 +776,7 @@ img {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 var(--input-range);
     cursor: pointer;
-    outline: none;
+    /* outline: none; */
 }
 .range_controls .toggle:hover {
     transform: scale(1.2);
@@ -807,7 +807,7 @@ img {
     font-size: inherit;
     color: inherit;
     background-color: transparent;
-    outline: none;
+    /* outline: none; */
     text-align: center;
     width: 139px;
     margin-left: 12px;
