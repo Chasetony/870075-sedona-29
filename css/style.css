@@ -337,9 +337,6 @@ img {
     height: 86px;
     display: block;
     margin: 0 auto;
-    /* outline: none; */
-
-
 }
 .forms_button:hover {
     background-color: var(--brown-hover);
@@ -417,7 +414,6 @@ img {
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
-    /* outline: none; */
     padding-left: 13px;
     box-sizing: border-box;
     cursor: pointer;
@@ -445,33 +441,33 @@ img {
 .input_group {
     display: flex;
     width: 114px;
-  }
+}
   
-  .input_group input[type='button'] {
+.input_group input[type='button'] {
     min-width: 38px;
-  }
+}
   
-  .input_group .button_minus,
-  .input_group .button_plus {
+.input_group .button_minus,
+.input_group .button_plus {
     padding: 0;
     position: relative;
     color: var(--input-minplus);
     font-size: 20px;
-  }
-  .input_group .button_minus:hover,
-  .input_group .button_plus:hover {
+}
+.input_group .button_minus:hover,
+.input_group .button_plus:hover {
     color: var(--basic-black);
-  }
-  .input_group .button_minus:active,
-  .input_group .button_plus:active {
+}
+.input_group .button_minus:active,
+.input_group .button_plus:active {
     color: var(--blue);
-  }
+}
   
-  .input_group .quantity_field {
+.input_group .quantity_field {
     position: relative;
     text-align: center;
     width: 100%;
-  }
+}
 
 .form_hotel input[type="text"]:hover,
 .form_hotel input[type="number"]:hover {
@@ -497,7 +493,6 @@ img {
     background-color: var(--blue);
     border: none;
     cursor: pointer;
-    /* outline: none; */
 }
 .form_hotel button:hover {
     background-color: var(--blue-hover);
@@ -505,7 +500,6 @@ img {
 .form_hotel button {
     background-color: var(--blue-active);
 }
-
 .maps {
     height: 594px;
 }
@@ -629,13 +623,11 @@ img {
     background-position: center;
     background-size: cover;
     height: 217px;
-
 }
 .filter_hotels {
     /* display: flex; */
     display: grid;
     grid-template-columns: 1fr auto;
-
 }
 .filter_wrapper {
     display: flex;
@@ -747,7 +739,6 @@ img {
     text-transform: uppercase;
     background: transparent;
     cursor: pointer;
-    /* outline: none; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -793,7 +784,6 @@ img {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 var(--input-range);
     cursor: pointer;
-    /* outline: none; */
 }
 .range_controls .toggle:hover {
     transform: scale(1.2);
@@ -824,7 +814,6 @@ img {
     font-size: inherit;
     color: inherit;
     background-color: transparent;
-    /* outline: none; */
     text-align: center;
     width: 139px;
     margin-left: 12px;
