@@ -209,7 +209,7 @@ img {
 .advantages_description {
     font-size: 14px;
     line-height: 21px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     color: var(--basic-white);
     margin-top: 26px;
@@ -238,7 +238,42 @@ img {
     align-items: center;
     margin: 0;
     padding: 0;
+    position: relative;
 }
+.advertising li{
+    margin-top: 70px;
+}
+.advertising .home::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 72px;
+    top: 33px;
+    left: 162px;
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+}
+.advertising .food::before {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 70px;
+    top: 34px;
+    left: 562px;
+    background-image: url(../img/icon-3.svg);
+    background-repeat: no-repeat;
+}
+.advertising .gift::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 77px;
+    top: 28px;
+    left: 968px;
+    background-image: url(../img/icon-2.svg);
+    background-repeat: no-repeat;
+}
+
 .advent_icon {
     display: block;
     margin: 0 auto;
@@ -327,16 +362,17 @@ img {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-align: center;
     text-transform: uppercase;
     color: var(--basic-white); 
-    border: none;
     background-color: var(--brown);
     cursor: pointer;
     width: 568px;
     height: 86px;
-    display: block;
+    /* display: block; */
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .forms_button:hover {
     background-color: var(--brown-hover);
@@ -422,6 +458,15 @@ img {
     width: 346px;
     padding: 0;
 }
+.date_input::placeholder {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    display: flex;
+    align-items: center;
+    vertical-align: middle
+}
 .date_calendar_wrapper {
     position: relative;
 }
@@ -450,6 +495,7 @@ img {
 .input_group .button_minus,
 .input_group .button_plus {
     padding: 0;
+    margin: 0;
     position: relative;
     color: var(--input-minplus);
     font-size: 20px;
@@ -466,7 +512,8 @@ img {
 .input_group .quantity_field {
     position: relative;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    width: 38px;
 }
 
 .form_hotel input[type="text"]:hover,
@@ -497,15 +544,19 @@ img {
 .form_hotel button:hover {
     background-color: var(--blue-hover);
 }
-.form_hotel button {
+.form_hotel button:active {
     background-color: var(--blue-active);
 }
 .maps {
     height: 594px;
+    background-image: url(../img/map.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .maps iframe{
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 /* Футер */
@@ -567,25 +618,25 @@ img {
 .footer_social_icons li:last-of-type{
     margin-right: 0px;
 }
-.coub {
+.cube {
     width: 46px;
     height: 48px;
     background-color: var(--blue);    
 }
-.coub img {
+.cube img {
     margin: 0 auto;
     display: block;
     position: relative;
     top: 50%;
     transform: translate(0px, -50%);
 }
-.coub:hover{
+.cube:hover{
     background-color: var(--blue-hover);
 }
-.coub:active{
+.cube:active{
     background-color: var(--blue-active);
 }
-.coub:active img {
+.cube:active img {
     opacity: 0.3;
 }
 
@@ -622,7 +673,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 217px;
+    min-height: 217px;
 }
 .filter_hotels {
     /* display: flex; */
@@ -908,6 +959,9 @@ img {
 .sort_icon:active path {
     fill: var(--blue);
 }
+.sort_icon.actived path {
+    fill: var(--blue);
+}
 
 /* Каталог */
 
@@ -973,13 +1027,17 @@ img {
 
 .btn {
     border: none;
-    height: 27px;
+    min-height: 27px;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
     text-transform: uppercase;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .btn_more {
     width: 110px;
