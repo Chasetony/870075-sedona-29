@@ -514,6 +514,18 @@ img {
     text-align: center;
     /* width: 100%; */
     width: 38px;
+    padding-left: 2px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    /* display: none; */
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 .form_hotel input[type="text"]:hover,
@@ -525,7 +537,7 @@ img {
 .form_hotel input[type="number"]:focus {
     background: var(--basic-white);
     border: 2px solid var(--decor-gray);
-    padding-left: 11px;
+    /* padding-left: 11px; */
     box-sizing: border-box;
 }
 .form_hotel button {
